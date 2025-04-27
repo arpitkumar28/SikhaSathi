@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AI Language Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-language"></i>
+            <span>AI Language Learning</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2>Create Your Account</h2>
+            <form id="signup-form" class="auth-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-language">Preferred Language</label>
+                    <select id="preferred-language" name="preferred-language" required>
+                        <optgroup label="Indian Languages">
+                            <option value="hindi">हिंदी (Hindi)</option>
+                            <option value="bengali">বাংলা (Bengali)</option>
+                            <option value="tamil">தமிழ் (Tamil)</option>
+                            <option value="telugu">తెలుగు (Telugu)</option>
+                            <option value="kannada">ಕನ್ನಡ (Kannada)</option>
+                            <option value="malayalam">മലയാളം (Malayalam)</option>
+                            <option value="marathi">मराठी (Marathi)</option>
+                            <option value="gujarati">ગુજરાતી (Gujarati)</option>
+                            <option value="punjabi">ਪੰਜਾਬੀ (Punjabi)</option>
+                            <option value="urdu">اردو (Urdu)</option>
+                        </optgroup>
+                        <optgroup label="International Languages">
+                            <option value="english">English</option>
+                            <option value="spanish">Español (Spanish)</option>
+                            <option value="french">Français (French)</option>
+                            <option value="german">Deutsch (German)</option>
+                            <option value="japanese">日本語 (Japanese)</option>
+                            <option value="korean">한국어 (Korean)</option>
+                            <option value="chinese">中文 (Chinese)</option>
+                            <option value="arabic">العربية (Arabic)</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <button type="submit" class="auth-button">Sign Up</button>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </main>
+
+    <script src="auth.js"></script>
+</body>
+</html> 
